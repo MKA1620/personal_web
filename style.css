@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 2px solid red; */
+    border-radius: 2px;
+    
+}
+
+body {
+    background-color: rgb(26, 47, 47);
+    font-family: Avenir
+
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.grid-gallery {
+    --spacing: 7px;
+    background-color: BLACK;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing);
+    padding: var(--spacing);
+}
+
+.card {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.card__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: transform .25s;
+}
+
+.card__overlay {
+    background-color: rgba(88, 119, 98, 0.5);
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    font-size: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    opacity: 0;
+    transition: opacity .25s;
+
+    /* top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; */
+
+    /* inset: 0; another option */
+}
+
+.card:hover .card__overlay {
+    opacity: 1;
+}
+
+.card:hover .card__img {
+    transform: scale(1.5);
+}
+
+.card:hover .gunman {
+    transform: translate(50%, 20%) scale(5);
+}
+
+/* Consider this media query its own mini stylesheet inside of your stylesheet, which takes effect once your screen width is less than 500px */
+
+@media (min-width: 700px) {
+    .grid-gallery {
+       grid-template-columns: 1fr 1fr;
+    }
+} 
+@media (min-width: 900px) {
+    .grid-gallery {
+       grid-template-columns: 1fr 1fr 1fr;
+    }
+} 
+@media (min-width: 1100px) {
+    .grid-gallery {
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+} 
+
+
+
+/*---------------------Bio Section ------------------------*/
+
+.bio-section {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value for opacity */
+    padding: 2%; /* Adjust as needed */
+    text-align: center;
+}
+
+.bio-box {
+    max-width: 100rem;
+    margin: auto;
+    background-color: rgba(93, 255, 182, 0.02); /* Adjust the last value for opacity */
+    border-radius: 10px; /* Adjust as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 2em; /* Adjust as needed */
+    font-size: clamp(2rem, 2vw, 4rem);
+}
+
+.bio-box h2, .bio-box p {
+    color: rgb(208, 208, 208);
+    text-align: left;
+    
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 600px) {
+    .bio-box {
+         /* Adjust as needed for smaller screens */
+        padding: 10%; /* Adjust as needed for smaller screens */
+    }
+
+    /* h2, p {
+        font-size: 2rem;
+    } */
+}
+
+/* @media (max-width: 800px) {
+    
+    h2, p {
+        font-size: 2rem;
+    }
+} */
+
+/*---------------------Bio Section ------------------------*/
+
+#scroll-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2fffa803;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+}
+html, body {
+    scroll-behavior: smooth;
+}
+

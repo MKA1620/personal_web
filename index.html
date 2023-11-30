@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+       
+        <nav class="top-menu">
+            <h1>Home Page</h1>
+          <a href="#">CONTACTS</a>
+          <a href="#">SOCIALS</a>
+        </nav>
+      </header>
+
+
+    <div class="grid-gallery">
+        <div class="card">
+            <img class="card__img" src="PLACEHOLDER.jpg" alt="Waterfall">
+            <div class="card__overlay">Overlay Text</div>
+        </div>
+        <div class="card">
+            <img class="card__img gunman" src="PLACEHOLDER.jpg" alt="Waterfall">
+            <div class="card__overlay">Overlay Text</div>
+        </div>
+        <div class="card">
+            <img class="card__img" src="PLACEHOLDER.jpg" alt="Waterfall">
+            <div class="card__overlay">Overlay Text</div>
+        </div>
+        <div class="card">
+            <img class="card__img" src="PLACEHOLDER.jpg" alt="Waterfall">
+            <div class="card__overlay">Overlay Text</div>
+        </div>
+        <div class="card">
+            <img class="card__img" src="PLACEHOLDER.jpg" alt="Waterfall">
+            <div class="card__overlay">Overlay Text</div>
+        </div>
+        <div class="card">
+            <img class="card__img" src="PLACEHOLDER.jpg" alt="Waterfall">
+            <div class="card__overlay">Overlay Text</div>
+        </div>
+        <div class="card">
+            <img class="card__img" src="PLACEHOLDER.jpg" alt="Waterfall">
+            <div class="card__overlay">Overlay Text</div>
+        </div>
+        <div class="card">
+            <img class="card__img" src="PLACEHOLDER.jpg" alt="Waterfall">
+            <div class="card__overlay">Overlay Text</div>
+        </div>
+        <div class="card">
+            <img class="card__img" src="PLACEHOLDER.jpg" alt="Waterfall">
+            <div class="card__overlay">Overlay Text</div>
+        </div>
+        <div class="card">
+            <img class="card__img" src="PLACEHOLDER.jpg" alt="Waterfall">
+            <div class="card__overlay">Overlay Text</div>
+        </div>
+        <div class="card">
+            <img class="card__img" src="PLACEHOLDER.jpg" alt="Waterfall">
+            <div class="card__overlay">Overlay Text</div>
+        </div>
+     
+       <div class="card">
+            <img class="card__img" src="PLACEHOLDER.jpg" alt="Waterfall">
+            <div class="card__overlay">Overlay Text</div>
+        </div>
+
+    </div>
+<section class="bio-section">
+        <div class="bio-box">
+            <h2>About Me</h2>
+            <p>My work consists of designing appealing characters suited for games and animation. I'm a video game enthusiast and digital artist. I've worked on mostly characters. I took inspiration from Disney's art style in my earlier work. Curently my work adopts a balance of stylized and realism.</p>
+        </div>
+    </section>
+
+    <button id="scroll-to-top-btn" onclick="scrollToTop()">^</button>
+
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+            var button = document.getElementById("scroll-to-top-btn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        }
+    
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+</html>
