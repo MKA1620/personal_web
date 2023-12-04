@@ -39,8 +39,9 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transform: scale(1);
+    transform: scale(2.5);
     transition: transform .25s;
+   
 }
 
 .card__overlay {
@@ -72,12 +73,39 @@ h1 {
 }
 
 .card:hover .card__img {
-    transform: scale(1.5);
+    transform: scale(1);
 }
 
-.card:hover .gunman {
-    transform: translate(50%, 20%) scale(5);
+.ow {
+    object-position: top;
+    transform: translateY(350px) scale(3);
 }
+
+.skin {
+    transform: translate(-250px, 0) scale(2);
+    object-fit: contain;
+}
+
+.card:hover .skin {
+    transform: translate(250px, 0) scale(2);
+}
+
+.leaf {
+    object-position: top;
+    transform: translate(-10%, 10%) scale(5);
+ 
+    
+
+}
+
+/* .card:hover .ow {
+    transform: scale(1);
+}
+.car:hover .leaf {
+    transform: scale(1);
+    
+} */
+
 
 /* Consider this media query its own mini stylesheet inside of your stylesheet, which takes effect once your screen width is less than 500px */
 
