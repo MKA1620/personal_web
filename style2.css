@@ -1,0 +1,67 @@
+/* Add this to your existing styles */
+
+/* Content styles */
+.content {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(26, 47, 47); /* Your main page background color */
+    color: rgb(208, 208, 208); /* Your bio box text color */
+    padding: 20px;
+}
+
+.artwork-slideshow {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.artwork-description {
+    flex-basis: 300px; /* Adjust the width of the description box */
+    font-family: Avenir;
+    font-size: clamp(2rem, 2vw, 4rem);
+    /* Use the same styles as .bio-box */
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Slideshow image */
+.mySlides img {
+    width: 100%;
+    border-radius: 2px;
+    object-fit: cover; /* Adjust as necessary */
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Back to Home button */
+.top-menu a {
+    display: inline-block;
+    padding: 10px;
+    background-color: #2fffa803; /* Adjust as needed */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Avenir;
+}
+header{
+    background-color: black;
+
+}
+body {
+
+    background-color: black;
+}
+/* Add responsive design adjustments as necessary */
